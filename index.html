@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumah Murah Tipe 30/60 | Skyland Property Nusantara</title>
+<meta name="description" content="Rumah Murah Tipe 30/60 dengan dapur sendiri. Opsi 1 Rp 215 juta dan Opsi 2 Rp 250 juta, 2 kamar tidur, carport, dan taman.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#atas" class="brand"><img src="img/logo.webp" alt="Skyland Property Nusantara"></a>
+  <nav>
+    <a href="#beda">Pilihan denah</a>
+    <a href="#denah">Denah</a>
+    <a href="#simulator">Simulator</a>
+    <a href="#dapur">Dapur</a>
+    <a href="#harga">Harga</a>
+    <a href="#spesifikasi">Spesifikasi</a>
+    <a href="analisa.html">Analisis</a>
+  </nav>
+  <a href="#kontak" class="btn btn-sm">Hubungi kami</a>
+</header>
+
+<main id="atas">
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <p class="tag">Rumah Murah Tipe 30+/60 · 2 pilihan denah</p>
+    <h1><span>Dapur sendiri,</span> <span>hidup lebih lega.</span></h1>
+    <p class="lead">Hunian tipe 30+ yang lebih lengkap, dengan ruang dapur tersendiri untuk keluarga Anda.</p>
+    <div class="hero-cta">
+      <span class="price">Opsi 1 · Rp 215 Juta</span>
+      <span class="price alt">Opsi 2 · Rp 250 Juta</span>
+      <a href="#denah" class="link">Lihat denah</a>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="layer l1"><div class="arch"><img src="img/rumah.webp" alt="Contoh tampak depan rumah" id="heroImg"></div></div>
+    <div class="layer l2">
+      <figure class="plan-card"><span class="olab">Opsi 1</span><img src="img/denah.webp" alt="Denah Opsi 1, dapur belakang"><figcaption><b>Rp 215 Juta</b>Dapur belakang</figcaption></figure>
+      <figure class="plan-card"><span class="olab hi">Opsi 2</span><div class="imgw"><img src="img/denah-opsi2.webp" alt="Denah Opsi 2 dengan ruang tamu luar dan kanopi"><span class="note">Ruang tamu luar + kanopi</span></div><figcaption><b>Rp 250 Juta</b>Dapur belakang, ruang tamu luar, dan tambahan kanopi ruang tamu</figcaption></figure>
+    </div>
+    <div class="layer l4"><div class="chip">Tambahan Opsi 2<br><b>Ruang tamu luar + kanopi</b></div></div>
+  </div>
+</section>
+
+<!-- PERBEDAAN -->
+<section class="sec" id="beda">
+  <h2>Dua pilihan denah</h2>
+  <p class="sub">Geser untuk membandingkan Opsi 1 dan Opsi 2.</p>
+  <div class="compare" id="compare">
+    <div class="pane base"><img src="img/denah.webp" alt="Denah Opsi 1">
+      <div class="cap left"><small>Opsi 1</small><b>Rp 215 Juta</b><span>Dapur belakang</span></div></div>
+    <div class="pane top"><img src="img/denah-opsi2.webp" alt="Denah Opsi 2">
+      <div class="cap right"><small>Opsi 2</small><b>Rp 250 Juta</b><span>Dapur belakang, ruang tamu luar, dan tambahan kanopi ruang tamu</span></div></div>
+    <div class="handle" id="handle"><i></i></div>
+    <input type="range" min="0" max="100" value="50" id="range" aria-label="Geser perbandingan denah">
+  </div>
+</section>
+
+<!-- DENAH -->
+<section class="sec dark" id="denah">
+  <div class="denah-wrap">
+    <div class="plan" id="plan"><img id="plan-img" src="img/denah.webp" alt="Denah Tipe 30/60"></div>
+    <div class="rooms">
+      <h2>Denah Tipe 30/60 yang efisien</h2>
+      <div class="switch" id="switch"><button class="on" data-o="0">Opsi 1</button><button data-o="1">Opsi 2</button></div>
+      <p class="optdesc" id="optdesc"></p>
+      <p class="sub">Sentuh nomor pada denah atau pilih ruangan.</p>
+      <ul id="rooms"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- SIMULATOR -->
+<section class="sec dark" id="simulator">
+  <div class="simcard">
+    <h2>Simulator keuangan pengembang <small>(input Rp juta, hasil Rp)</small></h2>
+    <p class="subd">Angka awal diambil dari file Excel Pengeluaran_Akad_rumah_murah.xlsx: Opsi 1 data real, Opsi 2 estimasi kelayakan. Ubah angka untuk menguji skenario.</p>
+    <div class="simgrid" id="simgrid"></div>
+    <div class="simdiff" id="simdiff"></div>
+  </div>
+</section>
+
+<!-- DAPUR -->
+<section class="sec" id="dapur">
+  <h2>Dapur sendiri, masak lebih leluasa</h2>
+  <div class="kitchen">
+    <div class="viewer">
+      <div class="tabs" role="tablist">
+        <button class="on" data-src="img/dapur-isometrik.webp" role="tab">Tampak 3D</button>
+        <button data-src="img/dapur-atas.webp" role="tab">Tampak atas</button>
+      </div>
+      <div class="tilt" id="tilt"><img id="kimg" src="img/dapur-isometrik.webp" alt="Ruang dapur dan taman di sebelahnya"><span class="badge">±6 m² dapur</span></div>
+    </div>
+    <ul class="feats">
+      <li><b>Dapur siap digunakan</b>Sink, kompor, meja kerja, dan area kulkas tertata rapi.</li>
+      <li><b>Taman di sebelah dapur</b>Area hijau ±3 × 1 m yang terlihat dari dapur.</li>
+      <li><b>Ruang tamu tetap segar</b>Dapur terpisah dari ruang keluarga, aroma masakan lebih terjaga.</li>
+      <li><b>Akses praktis</b>Pintu langsung ke lorong menuju kamar dan ruang keluarga.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- HARGA -->
+<section class="sec dark" id="harga">
+  <h2>Rumah murah, dua pilihan harga</h2>
+  <div class="money prices">
+    <div class="pcol">
+      <p class="plab">Opsi 1<span>Dapur belakang</span></p>
+      <p class="pricebig">Rp <em class="cnt" data-to="215">0</em> Juta</p>
+      <ul class="checks">
+        <li>Ruang dapur tersendiri ±6 m²</li>
+        <li>Layout dapur lengkap</li>
+        <li>Rumah lebih fungsional untuk keluarga</li>
+        <li>Lebih menarik saat dijual atau disewakan</li>
+      </ul>
+    </div>
+    <div class="pcol hi">
+      <p class="plab">Opsi 2<span>Dapur belakang, ruang tamu luar, dan tambahan kanopi ruang tamu</span></p>
+      <p class="pricebig">Rp <em class="cnt" data-to="250">0</em> Juta</p>
+      <ul class="checks">
+        <li>Semua yang ada di Opsi 1</li>
+        <li>Ruang tamu luar di bagian depan</li>
+        <li>Kanopi ruang tamu dengan dinding roster</li>
+        <li>Lebih lapang untuk menerima tamu</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GAYA HIDUP -->
+<section class="sec">
+  <h2>Cocok untuk gaya hidup Anda</h2>
+  <div class="trio">
+    <article><h3>Keluarga muda</h3><p>Dapur sendiri membuat aktivitas memasak dan bermain anak tetap rapi.</p></article>
+    <article><h3>Pasangan baru</h3><p>Hunian mungil yang tetap lengkap, dengan 2 kamar tidur dan carport.</p></article>
+    <article><h3>Investor &amp; sewa</h3><p>Layout lengkap lebih mudah ditawarkan ke penyewa maupun pembeli.</p></article>
+  </div>
+</section>
+
+<!-- SPESIFIKASI -->
+<section class="sec" id="spesifikasi">
+  <h2>Spesifikasi sekilas</h2>
+  <div class="specpair">
+    <div class="spec-col">
+      <h3>Opsi 1 <small>Rp 215 Juta</small></h3>
+      <div class="specs">
+        <div><b>2</b>Kamar tidur</div>
+        <div><b>1</b>Kamar mandi</div>
+        <div class="hl"><b>1</b>Dapur terpisah (belakang)</div>
+        <div><b>1</b>Carport mobil</div>
+        <div><b>60 m²</b>Luas tanah</div>
+        <div><b>30+ m²</b>Luas bangunan</div>
+      </div>
+    </div>
+    <div class="spec-col">
+      <h3>Opsi 2 <small>Rp 250 Juta</small></h3>
+      <div class="specs">
+        <div><b>2</b>Kamar tidur</div>
+        <div><b>1</b>Kamar mandi</div>
+        <div class="hl"><b>1</b>Dapur terpisah (belakang)</div>
+        <div><b>1</b>Carport mobil</div>
+        <div><b>60 m²</b>Luas tanah</div>
+        <div><b>30+ m²</b>Luas bangunan</div>
+        <div class="hl wide"><b>1</b>Ruang tamu luar dengan kanopi (tambahan)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section class="cta dark" id="kontak">
+  <h2>Siap punya rumah dengan dapur sendiri?</h2>
+  <p>Rumah Murah Tipe 30/60 | Opsi 1 Rp 215 Juta · Opsi 2 Rp 250 Juta</p>
+  <p class="sub">Hubungi kami untuk survei lokasi dan simulasi KPR.</p>
+  <!-- Ganti 6281234567890 dengan nomor WhatsApp Anda -->
+  <a class="btn" href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20Rumah%20Murah%20Tipe%2030%2F60" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
+</section>
+</main>
+
+<footer><img src="img/logo.webp" alt=""><span>Skyland Property Nusantara</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
